@@ -3,9 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title> Hotel Room Booking </title>
 </head>
 <body>
-    
+    <h1 align="center"> Hotel Room Booking Form </h1>
+    <form align="center" method="POST" action="#">
+        <div>
+            <label for="name"> Full Name: </label>
+            <input type="text" id="name" placeholder="Eg: Vedant Gupta" required>
+        </div>
+        <br>
+        <div>
+            <label for="Email"> Email: </label>
+            <input type="email" id="Email" placeholder="Eg: abcde@gmail.com">
+        </div>
+        <br>
+        <div>
+            <label for="phone"> Phone no.: </label>
+            <input type="tel" pattern="^\+91[0-9]{10}$" id="phone" placeholder="Eg: 7398538282" title="Enter in +91XXXXXXXXXX format" required>
+        </div>
+        <br>
+        <div>
+            <label for="cidate"> Check-in Date: </label>
+            <input type="date" id="cidate" required>
+        </div>
+        <br>
+        <div>
+            <label for="codate"> Check-out Date: </label>
+            <input type="date" id="codate" required>
+        </div>
+        <br>
+        <div>
+            <label for="room"> Room Type: </label>
+            <select id="room" required>
+                <option> Single-Bed Room </option>
+                <option> Two Single-Bed Room </option>
+                <option> Double-Bed Room </option>
+                <option> Suite Room </option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="guest"> Number of Guests: </label>
+            <input type="number" id="guest" placeholder="Eg: 4" required>
+        </div>
+        <br>
+        <div>
+            <label for="request"> Special Requests: </label>
+            <br>
+            <textarea id="request" rows="4" cols="50"></textarea>
+        </div>
+        <br>
+        <button type="submit"> Book Now </button>
+        <button type="reset"> Reset Form </button>
+    </form>
 </body>
 </html>
