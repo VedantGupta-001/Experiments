@@ -8,36 +8,62 @@
 <body>
     <h1 align="center"> Student Registration Form </h1>
     <hr>
-    <div>
-        <label for="fname"> Full Name: </label>
-        <input type="text" id="fname" placeholder="Enter your full name" required>
-    </div>
-    <br>
-    <div>
-        <label for="Email"> Email: </label>
-        <input type="email" id="Email" placeholder="Enter a valid email address" required>
-    </div>
-    <br>
-    <div>
-        <label for="pass"> Password: </label>
-        <input type="password" id="pass" placeholder="Enter password" required>
-    </div>
-    <br>
-    <div>
-        <label> Gender: </label>
+    <form>
+        <div>
+            <label for="fname"> Full Name: </label>
+            <input type="text" id="fname" placeholder="Enter your full name" required>
+        </div>
+        <br>
+        <div>
+            <label for="Email"> Email: </label>
+            <input type="email" id="Email" placeholder="Enter a valid email address" required>
+        </div>
+        <br>
+        <div>
+            <label for="pass"> Password: </label>
+            <input type="password" id="pass" placeholder="Enter password" required>
+        </div>
+        <br>
+        <div>
+            <label> Gender: </label>
 
-        <input type="radio" id="gender" name="gender" required>
-        <label for="gender"> Male </label>
+            <input type="radio" id="male" name="gender" required>
+            <label for="male"> Male </label>
 
-        <input type="radio" id="gender" name="gender" required>
-        <label for="gender"> Female </label>
+            <input type="radio" id="female" name="gender" required>
+            <label for="female"> Female </label>
 
-        <input type="radio" id="gender" name="gender" required>
-        <label for="gender"> Other </label>
-    </div>
-    <br>
-    <div>
-        
-    </div>
+            <input type="radio" id="others" name="gender" required>
+            <label for="others"> Other </label>
+        </div>
+        <br>
+        <div>
+            <label for="course"> Course: </label>
+            <select id="course">
+                <option> --Select Course-- </option>
+                <option> M.Tech </option>
+                <option> M.Sc </option>
+                <option> B.Tech </option>
+                <option> B.Sc </option>
+                <option> BA </option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="phone"> Contact No.: </label>
+            <input type="tel" pattern="^\+91[0-9]{10}$" id="phone" placeholder="Enter phone number" required>
+        </div>
+        <br>
+        <div>
+            <label for="add"> Address: </label>
+            <br>
+            <textarea id="add" rows="4" cols="50" placeholder="Enter your address"></textarea>
+        </div>
+        <br>
+        <button type="submit"> Register </button>
+        <button type="reset"> Clear </button>
+    </form>
+    <hr>
+    <p align="center"> <small> 2025 Student Registration Portal </small> </p>
 </body>
 </html>
